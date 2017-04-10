@@ -10,7 +10,7 @@ A simple classification program using k-Nearest Neighbour algorithm to predict i
 7. m_arrival_time 	(arrival time of Metro)
 8. m_deboard_time 	(Metro deborading time)
 9. o_reach_time 	(time of arrival at office)
-7. late (Binary values 0 for not late 1 for late)
+7. late (Binary values 0 -> not late and 1 -> late)
 
 __Note__: Time values are taken as per military time standards.
 For more information see: http://www.aaaknow.com/lessonFull.php?slug=timeMilitaryTo
