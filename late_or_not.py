@@ -5,15 +5,8 @@ import pandas as pd
 import numpy as np
 from sklearn import cross_validation, neighbors
 from matplotlib import pyplot as plt
-
-#data_frame = pd.read_csv('D:\Payworld_Analytics_MLY_12-2016_retailer_mrp_3.5_to_30000.csv');
-#data_frame.drop(['Retailercode'], 1, inplace = True);
-#data_frame.drop(['Retailername'], 1, inplace = True);
-
-#train= np.array(data_frame.drop(['mrp'],1));
-#test = np.array(data_frame['mrp']);
                 
-data_frame = pd.read_csv("D:/late_or_not.csv");                 
+data_frame = pd.read_csv("<location to the data set (.csv file)>");                 
 train = np.array(data_frame.drop(['late'], 1));
 test = np.array(data_frame['late']);
                 
