@@ -19,7 +19,7 @@ accuracy = clf.score(x_test, y_test);
 print('Accuracy: {}'.format(accuracy));
 
 #Predicting Test Data
-pre_data = np.array([[15, 8.42, 707, 803, 813, 2, 815, 933, 945]]);
+pre_data = np.array([[15, 8.42, 707, 803, 813, 2, 815, 933, 945]]); #test data for prediction...
 pre_data = pre_data.reshape(len(pre_data),-1);
 prediction = clf.predict(pre_data);
 
