@@ -6,7 +6,7 @@ import numpy as np
 from sklearn import cross_validation, neighbors
 from matplotlib import pyplot as plt
                 
-data_frame = pd.read_csv("/home/raja/late_or_not/late_or_not.csv");                 
+data_frame = pd.read_csv("<PATH_to_CSV_File>");                 
 train = np.array(data_frame.drop(['late'], 1));
 test = np.array(data_frame['late']);
                 
