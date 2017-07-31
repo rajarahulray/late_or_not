@@ -6,7 +6,7 @@ import numpy as np
 from sklearn import cross_validation, neighbors
 from matplotlib import pyplot as plt
                 
-data_frame = pd.read_csv("<location to the data set (.csv file)>");                 
+data_frame = pd.read_csv("/home/raja/late_or_not/late_or_not.csv");                 
 train = np.array(data_frame.drop(['late'], 1));
 test = np.array(data_frame['late']);
                 
@@ -19,7 +19,7 @@ accuracy = clf.score(x_test, y_test);
 print('Accuracy: {}'.format(accuracy));
 
 #Predicting Test Data
-pre_data = np.array([[15, 8.42, 707, 803, 813, 2, 815, 933, 945]]); #test data for prediction...
+pre_data = np.array([[16, 8.42, 707, 803, 813, 2, 1025, 933, 945]]); #test data for prediction...
 pre_data = pre_data.reshape(len(pre_data),-1);
 prediction = clf.predict(pre_data);
 
